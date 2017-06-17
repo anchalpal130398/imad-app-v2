@@ -9,12 +9,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+app.get('/artical-one', function (req, res) {
+  res.sendFile('artical 1 requested and will be seved here');
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('artical 2', function (req, res) {
+  res.sendFile('artical 2 requested and will be seved here');
 });
 
 
